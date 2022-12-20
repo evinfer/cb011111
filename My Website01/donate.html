@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link to css-->
+    <link rel="stylesheet" href="./styles/donate.css">
+    <title>Donation Form</title>
+
+</head>
+<body>
+    <div class="wrapper" id="top">
+        <div class="payment">
+            <div class="payment-logo">
+                <img src="./images/donation2.jpg" alt="danation_logo" width="50%">
+            </div>
+            <h2>DONATIONS</h2>
+            
+            <form method="get">
+                <div class="form">
+            <p>
+                <div class="card space icon-relative">
+                <label class="label">AMOUNT :</label>
+                <br>
+                        <input type="radio"  name="don" value="1" checked>
+                        <label class="one" for="1" >100LKR</label>
+                        <input type="radio" name="don" value="2" >
+                        <label class="one" for="2" >250LKR</label>
+                        <input type="radio"  name="don" value="3" >
+                        <label class="one" for="3" >500LKR</label>
+                        <input type="radio"  name="don" value="4" >
+                        <label class="five" for="4" >1,000LKR</label>
+                        <input type="radio" name="don" value="5" >
+                        <label class="two" for="5" >2,500LKR</label>
+                        <input type="radio" name="don" value="6" >
+                        <label class="three" for="6" >5,000LKR</label>
+                        <input type="radio"   name="don" value="7" >
+                        <label class="four" id="one" >10,000LKR</label>
+                        <input type="radio"   name="don" value="7" >
+                        <label class="four" id="one" >20,000LKR</label>
+                        <input type="radio"   name="don" value="7" >
+                        <label class="four" id="one" >50,000LKR</label>
+                        <input type="radio"   name="don" value="7" >
+                        <label class="four" id="one" >100,000LKR</label>
+                </div>
+            </p>
+                 <p>
+                    <div class="card space icon-relative">
+                    <label class="label">CARD HOLDER :</label>
+                    <input type="text" class="input" name="card_holder" placeholder="Name" required>
+                    </div>
+                </p>
+                <p>
+                    <div class="card space icon-relative">
+                    <label class="label">CARD HOLDER'S ADDRESS :</label>
+                    <input type="text" class="input" name="card_holder's_address" placeholder="adress" required>
+                    </div>
+                </p>
+                <P>
+                    <div class="card space icon-relative">
+                    <label class="label">PAYMENT METHOD :</label>
+                    <select name="paytype" class="input">
+                        <option value="debit">DEBIT CARD</option>
+                        <option value="credit">CREDIT CARD</option>
+                    </select>
+                    </P>
+                <br>
+                <P>
+                <div class="card space icon-relative">
+                <label class="label">CARD TYPE :</label>
+                <select name="paytype" class="input">
+                    <option value="visa">VISA</option>
+                    <option value="master">MASTERCARD</option>
+                    <option value="american express">AMERICAN EXPRESS</option>
+                    <option value="maestro">MAESTRO</option>
+                </select>
+                </P>
+            </div>
+
+                <p>
+                <div class="card space icon-relative">
+                    <label class="label">CARD NUMBER :</label>
+                    <input type="text" id="cardno" class="input" name="card_number" placeholder="0000-0000-0000-0000" maxlength="16"  required>
+                    </div>
+            </p>
+            <p>
+                <div class="card-grp space">
+                <div class="card-item icon-relative">
+                    <label class="label">EXPIRY DATE :</label>
+                    <input type="month" class="input"  name="expiry_date" placeholder="00/00" required >
+                   </div>
+                </p>
+                    <p>
+                        <div class="card_item icon-relative">
+                        <label class="label">CVC :</label>
+                        <input type="text" class="input" name="cvc" placeholder="000" maxlength="3"  required>
+                       </div>
+                    </p>
+                    </div>
+                    <div class="btn">
+                        <button onclick="submitFunction()" id="ms">DONATE</button></div>
+                        <section>
+                            <p id="donout" class="donout"></p>
+                        </section>
+                    </div>
+                </div>
+           </div>
+           </form>   
+           <!-- GO Back To PURCHASE & DONATE Page Image-->
+          <div class="goback">
+       <a href="./Purchase And Donate.html"><img src="./images/go back.png" alt="back"></a>
+    </div>
+   </body>
+</section> 
+</section>
+    <!--link to JS-->
+       <script src="./scripts/alert.js"></script>
+       
+</html>
